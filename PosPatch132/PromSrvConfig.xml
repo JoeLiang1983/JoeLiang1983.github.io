@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PromSrvConfig Customer="ASW">
+<Log>
+<LogFileName>Log\promsrv</LogFileName>
+<XmlLogFileName>Log\prom</XmlLogFileName>
+<LogLevel>1</LogLevel>
+<LogSwitches>
+<LogSwitch LogSwitchType="LogAddCoupon" LogSwitchValue="true" />
+<LogSwitch LogSwitchType="LogAddDiscount" LogSwitchValue="true" />
+<LogSwitch LogSwitchType="LogAddItem" LogSwitchValue="true" />
+<LogSwitch LogSwitchType="LogAddMemberCard" LogSwitchValue="true" />
+<LogSwitch LogSwitchType="LogAllXmlMessages" LogSwitchValue="true" />
+<LogSwitch LogSwitchType="LogGetSaversSummary" LogSwitchValue="true" />
+<LogSwitch LogSwitchType="LogGetTriggeredPromotions" LogSwitchValue="true" />
+<LogSwitch LogSwitchType="LogInit" LogSwitchValue="true" />
+<LogSwitch LogSwitchType="LogPrintMessages" LogSwitchValue="false" />
+<LogSwitch LogSwitchType="LogSetParam" LogSwitchValue="true" />
+<LogSwitch LogSwitchType="LogAddTender" LogSwitchValue="true" />
+<LogSwitch LogSwitchType="XLog" LogSwitchValue="false" />
+</LogSwitches>
+</Log>
+<Config>
+<ConfigEle Name="PromXmlEncoding" Value="GBK" />
+<ConfigEle Name="DecimalPointDelimiter" Value="," />
+<ConfigEle Name="MaxBarcodeSequence" Value="9999" />
+<ConfigEle Name="SimImmediateRewardMinValue" Value="0" />
+<ConfigEle Name="SimMemberAccountMinValue" Value="0" />
+<ConfigEle Name="DefaultFullScreenXResolution" Value="800" />
+<ConfigEle Name="DefaultFullScreenYResolution" Value="600" />
+<ConfigEle Name="CrossQdxNumber" Value="101" />
+<ConfigEle Name="ItemAmountInValueProm" Value="0" />
+<ConfigEle Name="LPEVersion" Value="5.0.0.0.1" />
+<ConfigEle Name="LoyaltyServerTimeoutInMili" Value="10000" />
+<!--ConfigEle Name="AggregateItemInstancesForDiscountLine" Value="INSTANCELEVEL" /-->
+<!--ConfigEle Name="AnyCustomerCardNumber" Value="" /-->
+</Config>
+<ConfigSwitches>
+<ConfigSwitch ConfigSwitchType="WeightedItemsConflictEnabled" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="SamePriorityEffectNetPrice" ConfigSwitchValue="true"/>
+<ConfigSwitch ConfigSwitchType="PromRecalculationAlwaysRequired" ConfigSwitchValue="true"/>
+<ConfigSwitch ConfigSwitchType="RegenerateMsg2" ConfigSwitchValue="false"/>
+<ConfigSwitch ConfigSwitchType="CardManagementActive" ConfigSwitchValue="false" />
+<ConfigSwitch ConfigSwitchType="CardValidationBlocking" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="ConflictManagementActive" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="NewConflictManagementActive" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="LockConfirmedPromotionMARedemption" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="ResolveMemberAccountPriority" ConfigSwitchValue="false" />
+<ConfigSwitch ConfigSwitchType="RewardSimulationActive" ConfigSwitchValue="false" />
+<ConfigSwitch ConfigSwitchType="TicketLayoutActive" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="UseHighestBucketPriority" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="UseNewApportionmentMechanism" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="ValidateRewardAmount" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="ValidateNewPriceRewardAmount" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="OptimizeLowestPrice" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="SupportGetRewardByRedemptions" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="UseItemDBNetPricing" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="SupportNewQdx" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="WeightStepThresholdIsAlwaysOne" ConfigSwitchValue="false" />
+<ConfigSwitch ConfigSwitchType="AutoUpdateBucketTotalsForManualProm" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="TrackMemberAccountResetMovements" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="AutoCalculatePromotionPriority" ConfigSwitchValue="false" />
+<ConfigSwitch ConfigSwitchType="PrintDataMember" ConfigSwitchValue="false" />
+<ConfigSwitch ConfigSwitchType="ReportReasonForNonTriggeringCoupon" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="PrintTemplateSupportDynamicLines" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="PromAsMeanOfPaymentAffectNetPricing" ConfigSwitchValue="false" />
+<ConfigSwitch ConfigSwitchType="MinimumMaximumItemWeightFromPromotion" ConfigSwitchValue="false" />
+<ConfigSwitch ConfigSwitchType="LoyaltyCommunicationMessage" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="UseDocumentManager" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="UseNewTargetMessageMechanism" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="ConflictWithOptimization" ConfigSwitchValue="false" />
+<ConfigSwitch ConfigSwitchType="UseOptimizationInsteadOfConflict" ConfigSwitchValue="false" />
+<ConfigSwitch ConfigSwitchType="IsResolvingConflictImmediately" ConfigSwitchValue="true" />
+<ConfigSwitch ConfigSwitchType="PromConflictRecalculationAlwaysRequired" ConfigSwitchValue="true" />
+</ConfigSwitches>
+<PromPriorities>
+<PromPriority PriorityType="AdditionalForLinkedPromotion" PriorityValue="0" />
+<PromPriority PriorityType="AdditionalForManualPromotion" PriorityValue="0" />
+<PromPriority PriorityType="AdditionalForManualOrderPromotion" PriorityValue="100" />
+<PromPriority PriorityType="AdditionalForOrderPromotion" PriorityValue="100" />
+<PromPriority PriorityType="AdditionalForStandardPromotion" PriorityValue="0" />
+<PromPriority PriorityType="AdditionalForTenderPromotion" PriorityValue="0" />
+<PromPriority PriorityType="AdditionalForTriggeredByMemberAccount" PriorityValue="0" />
+<!-- Prio by Group type -->
+<PromPriority PriorityType="GroupTypeQuantity" PriorityValue="0" />
+<PromPriority PriorityType="GroupTypeItemSpend" PriorityValue="20" />
+<PromPriority PriorityType="GroupTypeTicketSpend" PriorityValue="40" />
+<PromPriority PriorityType="GroupTypeMemberAccount" PriorityValue="80" />
+<PromPriority PriorityType="GroupTypeMixOfMAItemSpend" PriorityValue="70" />
+<!-- Prio by Reward type -->
+<PromPriority PriorityType="RewardTypeAmountOff" PriorityValue="5" />
+<PromPriority PriorityType="RewardTypeNewPrice" PriorityValue="8" />
+<PromPriority PriorityType="RewardTypeAmountOffTicket" PriorityValue="0" />
+<PromPriority PriorityType="RewardTypeFreeItem" PriorityValue="0" />
+<PromPriority PriorityType="RewardTypePercentOff" PriorityValue="5" />
+<PromPriority PriorityType="RewardTypePercentOffTicket" PriorityValue="6" />
+<PromPriority PriorityType="RewardTypeMemberAccount" PriorityValue="8" />
+<PromPriority PriorityType="RewardTypeTargetMessage" PriorityValue="60" />
+<PromPriority PriorityType="RewardTypeCoupon" PriorityValue="60" />
+<!-- Prio by Reward timing -->
+<PromPriority PriorityType="RewardTimingMemberAccount" PriorityValue="8" />
+<PromPriority PriorityType="RewardTimingVoucher" PriorityValue="10" />
+</PromPriorities>
+
+<DREElements>
+<DREElement Type="SupportMultiLanguage" Value="true" />
+</DREElements>
+
+<VirtualAccounts>
+<VirtualAccount Type="6">
+<ConcreteAccounts>
+<ConcreteAccount Type="9" />
+<ConcreteAccount Type="8" />
+</ConcreteAccounts>
+</VirtualAccount>
+</VirtualAccounts>
+<MarkedAccounts>
+</MarkedAccounts>
+<Debug Active="false">
+<TracePromotions>
+<TracePromotion PromNumber="123" />
+</TracePromotions>
+</Debug>
+<PromApportionmentAlgorithm>
+<ApportionmentAlgorithm GroupType="1" RewardType="8" ApportionmentType="4" Value="2" /> 
+<ApportionmentAlgorithm GroupType="1" RewardType="9" ApportionmentType="4" Value="1" /> 
+<ApportionmentAlgorithm GroupType="1" RewardType="10" ApportionmentType="4" Value="2" /> 
+<ApportionmentAlgorithm GroupType="1" RewardType="11" ApportionmentType="4" Value="1" /> 
+<ApportionmentAlgorithm GroupType="1" RewardType="15" ApportionmentType="4" Value="2" /> 
+<ApportionmentAlgorithm GroupType="1" RewardType="21" ApportionmentType="4" Value="2" /> 
+<ApportionmentAlgorithm GroupType="2" RewardType="8" ApportionmentType="4" Value="2" /> 
+<ApportionmentAlgorithm GroupType="2" RewardType="9" ApportionmentType="4" Value="1" /> 
+<ApportionmentAlgorithm GroupType="2" RewardType="10" ApportionmentType="4" Value="2" /> 
+<ApportionmentAlgorithm GroupType="2" RewardType="11" ApportionmentType="4" Value="1" /> 
+<ApportionmentAlgorithm GroupType="2" RewardType="15" ApportionmentType="4" Value="2" /> 
+<ApportionmentAlgorithm GroupType="2" RewardType="21" ApportionmentType="4" Value="2" /> 
+<ApportionmentAlgorithm GroupType="1" RewardType="8" ApportionmentType="2" Value="2" /> 
+<ApportionmentAlgorithm GroupType="1" RewardType="9" ApportionmentType="2" Value="1" /> 
+<ApportionmentAlgorithm GroupType="1" RewardType="10" ApportionmentType="2" Value="2" /> 
+<ApportionmentAlgorithm GroupType="1" RewardType="11" ApportionmentType="2" Value="1" /> 
+<ApportionmentAlgorithm GroupType="1" RewardType="21" ApportionmentType="2" Value="2" /> 
+<ApportionmentAlgorithm GroupType="2" RewardType="8" ApportionmentType="2" Value="2" /> 
+<ApportionmentAlgorithm GroupType="2" RewardType="9" ApportionmentType="2" Value="1" /> 
+<ApportionmentAlgorithm GroupType="2" RewardType="10" ApportionmentType="2" Value="2" /> 
+<ApportionmentAlgorithm GroupType="2" RewardType="11" ApportionmentType="2" Value="1" /> 
+<ApportionmentAlgorithm GroupType="2" RewardType="15" ApportionmentType="2" Value="2" /> 
+<ApportionmentAlgorithm GroupType="2" RewardType="21" ApportionmentType="2" Value="2" />
+<ApportionmentAlgorithm GroupType="11" RewardType="8" ApportionmentType="4" Value="2" />
+<ApportionmentAlgorithm GroupType="11" RewardType="9" ApportionmentType="4" Value="1" />
+<ApportionmentAlgorithm GroupType="11" RewardType="10" ApportionmentType="4" Value="2" />
+<ApportionmentAlgorithm GroupType="11" RewardType="11" ApportionmentType="4" Value="1" />
+<ApportionmentAlgorithm GroupType="11" RewardType="15" ApportionmentType="4" Value="2" />
+<ApportionmentAlgorithm GroupType="11" RewardType="21" ApportionmentType="4" Value="2" />
+<ApportionmentAlgorithm GroupType="11" RewardType="8" ApportionmentType="2" Value="2" />
+<ApportionmentAlgorithm GroupType="11" RewardType="9" ApportionmentType="2" Value="1" />
+<ApportionmentAlgorithm GroupType="11" RewardType="10" ApportionmentType="2" Value="2" />
+<ApportionmentAlgorithm GroupType="11" RewardType="11" ApportionmentType="2" Value="1" />
+<ApportionmentAlgorithm GroupType="11" RewardType="15" ApportionmentType="2" Value="2" />
+<ApportionmentAlgorithm GroupType="11" RewardType="21" ApportionmentType="2" Value="2" />
+</PromApportionmentAlgorithm>
+</PromSrvConfig>
